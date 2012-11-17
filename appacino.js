@@ -49,7 +49,7 @@ $('#feedlist').live('pageinit', function(event) {
 $('#find').live('pageinit', function(event) {
   fixLinks();
   $('#discoverSearch').click(function(eventObj) {
-    performSearch('');
+    performSearch($('#searchbox').val());
     eventObj.preventDefault();
   });
 
@@ -57,18 +57,36 @@ $('#find').live('pageinit', function(event) {
 });
 
 function performSearch(filter) {
-  $.getJSON('search.php', function(data) {
-    var results = [];
+  $.getJSON('search.php?query=' + filter, function(data) {
+    var results = []; 
+    results.push('<ul class="nav nav-tabs nav-stacked activity-list">');
 
     $.each(data, function(idx, obj) {
       console.log(obj);
+      result = '\
+                                <li><a href="#shop-alturacoffee">\
+                                    <i class="icon-chevron-right"></i>\
+                                        <div class="media">\
+                                            <img class="media-object pull-left" src="http://placehold.it/64x64">\
+                                            <div class="media-body">\
+                                            <h4 class="media-heading">'+ obj.name +'</h4><br />\
+                                            <span class="label label-success">Fair Trade</span>\
+                                            <span class="label label-success">Single Origin</span>\
+                                            <!-- Nested media object -->\
+                                            <div class="media"></div>\
+                                        </div>\
+                                    </div>\
+                                </a></li>';
+/*
       result = '<div class="searchresult">';
       result += '<span class="storename"> ' + obj.name + ' </span>';
       result += '<span class="address"> ' + obj.address+ ' </span>';
       result += '<span class="distance"> ' + obj.distance + ' </span>';
       result += '</div>';
+*/
       results.push(result);
     });
+    results.push('</ul>');
 
     displayResultList(results.join(''));
   });

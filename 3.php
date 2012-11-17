@@ -67,7 +67,7 @@
 
                             <form class="form-search">
                                 <div class="input-append">
-                                <input type="text" class="input-medium search-query search-query span6">
+                                <input type="text" class="input-medium search-query search-query span6" id="searchbox">
                                 <button type="submit" class="btn" data-role="none" id="discoverSearch">Search</button>
                                 </div>
                             </form>
@@ -76,7 +76,7 @@
                             <div class="map-static"></div>
 
                             <!-- list -->
-                            <div data-role="page" id="nearby"></div>
+                            <div id="nearby">
                             <ul class="nav nav-tabs nav-stacked activity-list">
                                 <li><a href="#shop-alturacoffee">
                                     <i class="icon-chevron-right"></i>
@@ -107,6 +107,7 @@
                                 </a></li>
 
                             </ul>
+                            </div>
 
                     </div><!-- /content -->
 
