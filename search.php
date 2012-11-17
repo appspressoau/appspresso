@@ -6,7 +6,7 @@ $client_secret = "JF4HONACL3XZ1FVO0GRRSEUIYKFYVV1WH4OW3UWHV4RTUDWN";
 
 $foursquare = new FoursquareAPI($client_key,$client_secret);
 
-$location = isset($_GET['query']) ? $_GET['query'] : 'flinders uni building adelaide';
+$location = isset($_GET['query']) && strlen($_GET['query']) ? $_GET['query'] : 'flinders uni building adelaide';
 
 // Generate a latitude/longitude pair using Google Maps API
 list($lat,$lng) = $foursquare->GeoLocate($location);
