@@ -77,33 +77,7 @@
                             <!-- list -->
                             <div id="nearby">
                             <ul class="nav nav-tabs nav-stacked activity-list">
-                                <li><a href="#shop-alturacoffee">
-                                    <i class="icon-chevron-right"></i>
-                                        <div class="media">
-                                            <img class="media-object pull-left" src="http://placehold.it/64x64">
-                                            <div class="media-body">
-                                            <h4 class="media-heading">Altura Coffee</h4><br />
-                                            <span class="label label-success">Fair Trade</span>
-                                            <span class="label label-success">Single Origin</span>
-                                            <!-- Nested media object -->
-                                            <div class="media"></div>
-                                        </div>
-                                    </div>
-                                </a></li>
 
-
-                                <li><a href="#">
-                                    <i class="icon-chevron-right"></i>
-                                        <div class="media">
-                                            <img class="media-object pull-left" src="http://placehold.it/64x64">
-                                            <div class="media-body">
-                                            <h4 class="media-heading">Mr Coffee</h4><br />
-                                            <span class="label label-success">Fair Trade</span>
-                                            <!-- Nested media object -->
-                                            <div class="media"></div>
-                                        </div>
-                                    </div>
-                                </a></li>
 
                             </ul>
                             </div>
