@@ -164,9 +164,9 @@
                                         <div class="media">
                                             <img class="media-object pull-left" src="content/users/3.png" alt="" width="48" height="48">
                                             <div class="media-body">
-                                            <h4 class="media-heading">Name Name</h4>
+                                            <h4 class="media-heading">Ashley Holman</h4>
                                             <div class="media">
-                                            ordered a large latte
+                                            Drank a large latte, extra hot, brewed by <span class="brewer" href="#bmcb">Brewey McBrewer</span>.
                                             </div>
                                             </div>
                                             </div>
