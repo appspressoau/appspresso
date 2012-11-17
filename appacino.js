@@ -40,7 +40,7 @@ $('#feedlist').live('pageinit', function(event) {
   });
 });
 
-$('#nearby').live('pageinit', function(event) {
+$('#find').live('pageinit', function(event) {
   $.getJSON('nearby.json', function(data) {
     var results = [];
 

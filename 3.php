@@ -43,6 +43,9 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    <script type="text/javascript" src="scripts/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="scripts/js/jquery.mobile-1.2.0.js"></script>
+    <script type="text/javascript" src="appacino.js"></script>
 </head>
 
 <body>
@@ -70,6 +73,7 @@
                             <div class="map-static"></div>
 
                             <!-- list -->
+                            <div data-role="page" id="nearby"></div>
                             <ul class="nav nav-tabs nav-stacked activity-list">
                                 <li><a href="#shop-alturacoffee">
                                     <i class="icon-chevron-right"></i>
