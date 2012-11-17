@@ -1,5 +1,12 @@
-<?php 
+<?php
 require_once("lib/FoursquareAPI.class.php");
+
+function metersToDistance($meters) {
+  $base = min(2,floor(log($meters,1000)));
+  $units = array("m", "km");
+  return ($meters / pow(1000,$base)) . $units[$base];
+}
+
 // Set your client key and secret
 $client_key = "YTRI2IGK4PCLZ404QVGL4CVHFKKUO1YOMJXYNPFCOUH5B3VG";
 $client_secret = "JF4HONACL3XZ1FVO0GRRSEUIYKFYVV1WH4OW3UWHV4RTUDWN";
@@ -20,7 +27,7 @@ $venues = json_decode($response);
 $results = array();
 foreach($venues->response->venues as $venue) {
   $result = array('name' => $venue->name,
-                     'distance' => $venue->location->distance . 'm');
+                  'distance' => metersToDistance($venue->location->distance));
   if (isset($venue->location->address)) {
     $result['address'] = $venue->location->address;
   }
