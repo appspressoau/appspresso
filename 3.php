@@ -61,9 +61,9 @@
                     <div class="static-header" data-role="header">
                         <h1>Appuccino</h1>
                     </div><!-- /header -->
-
+                    <div class="submenu"><h2>Discover</h2></div>
                     <div data-role="content" data-theme="d">
-                        <h2>Find Coffee</h2>
+
 
                             <form class="form-search">
                                 <div class="input-append">

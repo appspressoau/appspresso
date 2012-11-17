@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Appuccino (1)</title>
+    <title>Appuccino (3)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content=""><!-- App splash screen -->
     <link rel="apple-touch-startup-image" href="img/splash.png"><!-- Fullscreen app -->
     <meta name="apple-mobile-web-app-capable" content="yes"><!-- Alter the staus bar (default|black|black-translucent) -->
     <meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- Le styles -->
-    <link href="./styles/css/jquery.mobile.structure-1.2.0 copy.css" rel="stylesheet" type="text/css">
+
     <link href="./styles/css/bootstrap.css" rel="stylesheet" type="text/css">
     <style type="text/css">
   body {
@@ -31,7 +31,8 @@
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./styles/css/responsive.css" rel="stylesheet" type="text/css">
-
+<!--     <link href="./styles/css/jquery.mobile-1.2.0.css" rel="stylesheet" type="text/css"> -->
+    <link href="./styles/css/jquery.mobile-1.2.0.css" rel="stylesheet" type="text/css">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="scripts/js/html5shiv.js"></script>
@@ -42,92 +43,34 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    <script type="text/javascript" src="scripts/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="scripts/js/jquery.mobile-1.2.0.js"></script>
+    <script type="text/javascript" src="appacino.js"></script>
 </head>
 
 <body>
-    <div class="">
+    <div class="container-narrow">
 
         <div class="row-fluid">
             <div class="span6">
 
 
-                <!-- Home screen -->
-
-                <div  data-role="page" id="one">
-                    <div class="static-header" data-role="header">
-                        <h1 style="">Appuccino</h1>
-                    </div><!-- /header -->
-
-                    <div data-role="content">
-
-                        <!--
-<p><a href="#two" data-role="button">Show page "two"</a></p>
-
--->
-                        <div class="btn btn-large btn-block"><a  href="#popup-login" data-role="button" data-rel="dialog" data-transition="pop">Login</a></div>
-                        <div  class="btn btn-large btn-block"><a href="#popup-register" data-role="button" data-rel="dialog" data-transition="pop">Register</a></div>
-                    </div><!-- /content -->
-
-                    <div data-role="footer" data-theme="d">
-                        <?php require("navigation.php");?>
-                    </div><!-- /footer -->
-                </div><!-- /page one -->
-
-
-
-
-
-                <!-- Login modal -->
-
-                <div data-role="page" id="popup-login">
-                    <h2>Login</h2>
-                    <div data-role="content" data-theme="d">
-                        <form>
-                            <input type="text" placeholder="Email">
-                            <input type="password" placeholder="Password">
-                        </form>
-                        <p><a href="#feed" data-role="button" data-inline="true" data-icon="back">Login</a></p>
-                        <p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back</a></p>
-                    </div><!-- /content -->
-
-                    <div data-role="footer" data-theme="d">
-
-                    </div><!-- /footer -->
-                </div><!-- /page popup-login -->
-
-
-
-                <!-- Registration modal -->
-
-                <div data-role="page" id="popup-register">
-                    <div class="static-header" data-role="header">
-                        <h1 style="">Appuccino</h1>
-                    </div><!-- /header -->
-                    <h2>Register</h2>
-                    <div data-role="content" data-theme="d">
-                        <form>
-                            <input type="text" placeholder="Email">
-                            <input type="password" placeholder="Password">
-                        </form>
-                        <p><a href="#feed" data-role="button" data-inline="true" data-icon="back">Register</a></p>
-                    </div><!-- /content -->
-
-                    <div data-role="footer" data-theme="d">
-                    </div><!-- /footer -->
-                </div><!-- /page popup -->
-
-
-
                 <!-- Activity Feed -->
 
-                <div data-role="page" id="feed">
+                <div data-role="page" id="find">
                     <div class="static-header" data-role="header">
                         <h1>Appuccino</h1>
                     </div><!-- /header -->
+                    <div class="submenu"><h2>Blend</h2></div>
 
                     <div data-role="content" data-theme="d">
-                        <h2>Activity Feed</h2>
-                        <ul class="nav nav-tabs nav-stacked activity-list">
+
+
+
+
+                            <!-- list -->
+                            <div data-role="page" id="nearby"></div>
+                            <ul class="nav nav-tabs nav-stacked activity-list">
                             <li><a href="#">
                                     <i class="icon-chevron-right"></i>
                                         <div class="media">
@@ -159,7 +102,8 @@
                     <div data-role="footer" data-theme="d">
                         <?php require("navigation.php");?>
                     </div><!-- /footer -->
-                </div><!-- /page popup-login -->
+                </div><!-- /page -->
+
 
 
 
