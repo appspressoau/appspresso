@@ -88,6 +88,7 @@ span.ui-btn-text {
 }
 
 .form-search {
+    text-align: center;
     input.ui-input-text {
         width: 100%;
         display:inline !important;
@@ -121,6 +122,9 @@ form {
       -------------------------------------------------- */
       #footer {
           background: @black !important;
+          position: fixed;
+          bottom:0;//support for this is patchy. Should be fine for ios 5 & 6, but no further promises!
+          width: 100%;
           * {
               border: 0 none; // kills that pesky line of unknown origin!!
           }
@@ -150,7 +154,7 @@ form {
             display: inline-block;
             font-weight: normal;
             width: 30%;
-            padding-top: 9px;
+            padding-top: 3px;
 
 
                    }
