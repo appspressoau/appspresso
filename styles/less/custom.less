@@ -1,22 +1,108 @@
 .static-header{
+    background: @black;
+    margin:0;
+
     h1 {
         font-family: Lobster;
         font-size: 30px !important;
         font-weight: normal;
-        margin: 10px 0 !important;
+        margin: 0 !important;
+        color: @white;
+        padding: 5px 0 !important;
     }
 }
 
-#global-nav {
-    text-align: center;
-    width: 100%;
-    i {
-        font-size:24px;
+
+
+.activity-list {
+    li a{
+        color: @textColor !important;
+        font-weight: normal !important;
+    }
+    .icon-chevron-right {
+        float:right;
+        margin-right: -6px;
+        margin-top: 2px;
+    }
+
+    .media {
+        margin-top: 0;
     }
 }
+
+.map-static {
+    background: url('../../img/map.png') no-repeat center center;
+    height: 100px;
+    width:100%;
+    margin-bottom: 5px;
+}
+
+
+span.ui-btn-text {
+/*     display:none; */
+}
+.ui-btn {display:inline !important;}
+.ui-btn.ui-shadow, .ui-btn-hover-d {
+    .box-shadow(none);
+    background: none;
+    border: 0 none;
+}
+
+.form-search {
+    input.ui-input-text {
+        width: auto;
+        display:inline !important;
+    }
+
+    .btn {
+        display:inline !important;
+    }
+}
+
+form {
+    .ui-input-text {
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+
+    }
+}
+
+
+/* Dialog box ----------- */
+.ui-dialog-contain {
+    border: 1px solid #333;
+    .border-radius(4px);
+    padding: 10px;
+}
+
 
 /* Sticky footer styles
       -------------------------------------------------- */
+      #footer {
+          background: @black !important;
+
+      }
+      #global-nav {
+        text-align: center;
+        width: 100%;
+        a {
+            color: @white !important;
+        }
+
+        i {
+             margin: 0 5px;
+             padding: 10px;
+             font-size:24px;
+
+            &:hover {
+                background: #666;
+            }
+        }
+
+      }
+
+
 
       html,
       body {

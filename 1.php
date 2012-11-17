@@ -11,7 +11,7 @@
     <link rel="apple-touch-startup-image" href="img/splash.png"><!-- Fullscreen app -->
     <meta name="apple-mobile-web-app-capable" content="yes"><!-- Alter the staus bar (default|black|black-translucent) -->
     <meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- Le styles -->
-
+    <link href="./styles/css/jquery.mobile.structure-1.2.0 copy.css" rel="stylesheet" type="text/css">
     <link href="./styles/css/bootstrap.css" rel="stylesheet" type="text/css">
     <style type="text/css">
   body {
@@ -31,7 +31,7 @@
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./styles/css/responsive.css" rel="stylesheet" type="text/css">
-    <link href="./styles/css/jquery.mobile-1.2.0.css" rel="stylesheet" type="text/css">
+
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="scripts/js/html5shiv.js"></script>
@@ -45,7 +45,7 @@
 </head>
 
 <body>
-    <div class="container-narrow">
+    <div class="">
 
         <div class="row-fluid">
             <div class="span6">
@@ -64,8 +64,8 @@
 <p><a href="#two" data-role="button">Show page "two"</a></p>
 
 -->
-                        <p><a href="#popup-login" data-role="button" data-rel="dialog" data-transition="pop">Login</a></p>
-                        <p><a href="#popup-register" data-role="button" data-rel="dialog" data-transition="pop">Register</a></p>
+                        <div class="btn btn-large btn-block"><a  href="#popup-login" data-role="button" data-rel="dialog" data-transition="pop">Login</a></div>
+                        <div  class="btn btn-large btn-block"><a href="#popup-register" data-role="button" data-rel="dialog" data-transition="pop">Register</a></div>
                     </div><!-- /content -->
 
                     <div data-role="footer" data-theme="d">
@@ -80,9 +80,6 @@
                 <!-- Login modal -->
 
                 <div data-role="page" id="popup-login">
-                    <div class="static-header" data-role="header">
-                        <h1 style="">Appuccino</h1>
-                    </div><!-- /header -->
                     <h2>Login</h2>
                     <div data-role="content" data-theme="d">
                         <form>
@@ -130,9 +127,32 @@
 
                     <div data-role="content" data-theme="d">
                         <h2>Activity Feed</h2>
-                        <ul class="nav nav-tabs nav-stacked">
-                            <li><a href="#">Joe bought a coffee form <i>that coffee place</i></a></li>
-                            <li><a href="#">Steve just unlocked the <i>Coffee Fiend</i> badge</a></li>
+                        <ul class="nav nav-tabs nav-stacked activity-list">
+                            <li><a href="#">
+                                    <i class="icon-chevron-right"></i>
+                                        <div class="media">
+                                            <img class="media-object pull-left" src="content/users/1.png" alt="1" width="48" height="48">
+                                            <div class="media-body">
+                                            <h4 class="media-heading">Zoe Bogner</h4>
+                                            <div class="media">
+                                            "You must try the ciboccino!"
+                                            </div>
+                                            </div>
+                                            </div>
+                                </a></li>
+
+                                <li><a href="#">
+                                    <i class="icon-chevron-right"></i>
+                                        <div class="media">
+                                            <img class="media-object pull-left" src="content/users/2.jpg" alt="" width="48" height="48">
+                                            <div class="media-body">
+                                            <h4 class="media-heading">Name Name</h4>
+                                            <div class="media">
+                                            unlocked the <strong>Caffeine Fiend</strong> badge!
+                                            </div>
+                                            </div>
+                                            </div>
+                                </a></li>
                         </ul>
                     </div><!-- /content -->
 

@@ -45,7 +45,7 @@
 </head>
 
 <body>
-    <div class="container-narrow">
+    <div class="">
 
         <div class="row-fluid">
             <div class="span6">
@@ -53,7 +53,7 @@
 
                 <div id="header" data-role="page" id="one">
                     <div data-role="header">
-                        <h1 style="">Appacino</h1>
+                        <h1 style="">Appaccino</h1>
                     </div><!-- /header -->
 
                     <div data-role="content">
