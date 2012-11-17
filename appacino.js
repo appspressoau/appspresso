@@ -73,17 +73,11 @@ function performSearch(filter) {
                                             <span class="label label-success">Fair Trade</span>\
                                             <span class="label label-success">Single Origin</span>\
                                             <!-- Nested media object -->\
-                                            <div class="media"></div>\
+                                            <div class="media"><span>'+obj.address+'</span>\
+                                            <span>'+obj.distance+'</span></div>\
                                         </div>\
                                     </div>\
                                 </a></li>';
-/*
-      result = '<div class="searchresult">';
-      result += '<span class="storename"> ' + obj.name + ' </span>';
-      result += '<span class="address"> ' + obj.address+ ' </span>';
-      result += '<span class="distance"> ' + obj.distance + ' </span>';
-      result += '</div>';
-*/
       results.push(result);
     });
     results.push('</ul>');
