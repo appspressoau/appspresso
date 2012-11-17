@@ -1,3 +1,20 @@
+<?php
+
+$footer = '<div data-role="footer" data-theme="d">
+                        <div id="footer">
+
+                            <div id="global-nav" data-role="controlgroup" data-type="horizontal">
+                                <ul>
+                                    <li class="active"><a href="3.php" data-role="button" data-ajax="false"><i class="icon-screenshot"></i></a></li>
+                                    <li><a href="1.php" data-role="button" data-ajax="false"><i class="icon-comments"></i></a></li>
+                                    <li><a href="4.php" data-role="button" data-ajax="false"><i class="icon-list-ol"></i></a></li>
+                                </ul>
+                            </div><!-- /#global-nav-->
+
+                        </div><!-- /#footer -->
+                    </div><!-- /footer -->';
+
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -85,9 +102,8 @@
 
                     </div><!-- /content -->
 
-                    <div data-role="footer" data-theme="d">
-                        <?php require("navigation.php");?>
-                    </div><!-- /footer -->
+                    <!-- Footer-->
+                    <?php echo $footer; ?>
                 </div><!-- /page -->
 
 
@@ -155,9 +171,8 @@
 
                     </div><!-- /content -->
 
-                    <div data-role="footer" data-theme="d">
-                        <?php require("navigation.php");?>
-                    </div><!-- /footer -->
+                    <!-- Footer-->
+                    <?php echo $footer; ?>
                 </div><!-- /page -->
 
 
@@ -185,9 +200,8 @@
 
                     </div><!-- /content -->
 
-                    <div data-role="footer" data-theme="d">
-                        <?php require("navigation.php");?>
-                    </div><!-- /footer -->
+                    <!-- Footer-->
+                    <?php echo $footer; ?>
                 </div><!-- /page -->
 
             </div>

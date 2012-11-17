@@ -1,3 +1,18 @@
+<?php
+    $footer = '<div data-role="footer" data-theme="d">
+                        <div id="footer">
+
+                            <div id="global-nav" data-role="controlgroup" data-type="horizontal">
+                                <ul>
+                                    <li><a href="3.php" data-role="button" data-ajax="false"><i class="icon-screenshot"></i></a></li>
+                                    <li><a href="1.php" data-role="button" data-ajax="false"><i class="icon-comments"></i></a></li>
+                                    <li class="active"><a href="4.php" data-role="button" data-ajax="false"><i class="icon-list-ol"></i></a></li>
+                                </ul>
+                            </div><!-- /#global-nav-->
+
+                        </div><!-- /#footer -->
+                    </div><!-- /footer -->';
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -61,12 +76,12 @@
                         <h1>Appuccino</h1>
                     </div><!-- /header -->
                     <div class="submenu"><h2>Belong</h2></div>
+                    <h4>Leaderboard</h4>
                     <div data-role="content" data-theme="d">
 
 
 
                             <!-- list -->
-                            <div data-role="page" id="nearby"></div>
 
                             <div class="btn-group">
                                 <a class="btn active" data-role="none">Stores</a>
@@ -77,7 +92,7 @@
                                 <li><a href="#shop-alturacoffee">
                                     <i class="icon-chevron-right"></i>
                                         <div class="media">
-                                            <img class="media-object pull-left" src="http://placehold.it/64x64">
+                                            <i class="icon-map-marker media-object pull-left"></i>
                                             <div class="media-body">
 
                                             <h4 class="media-heading"><i class="icon-trophy"></i>Altura Coffee</h4><br />
@@ -93,8 +108,7 @@
                                 <li><a href="#">
                                     <i class="icon-chevron-right"></i>
                                         <div class="media">
-                                            <img class="media-object pull-left" src="http://placehold.it/64x64">
-                                            <div class="media-body">
+                                            <i class="icon-map-marker media-object pull-left"></i>                                            <div class="media-body">
                                             <h4 class="media-heading">Kaffe Haus</h4><br />
                                             <!-- Nested media object -->
                                             <div class="media">
@@ -111,9 +125,8 @@
 
                     </div><!-- /content -->
 
-                    <div data-role="footer" data-theme="d">
-                        <?php require("navigation.php");?>
-                    </div><!-- /footer -->
+                    <!--  Footer -->
+                    <?php echo $footer; ?>
                 </div><!-- /page -->
 
 
@@ -168,9 +181,8 @@
 
                     </div><!-- /content -->
 
-                    <div data-role="footer" data-theme="d">
-                        <?php require("navigation.php");?>
-                    </div><!-- /footer -->
+                    <!--  Footer -->
+                    <?php echo $footer; ?>
                 </div><!-- /page -->
 
             </div>
