@@ -66,7 +66,7 @@
                         <h2>Find Coffee</h2>
                             <form class="form-search">
                                 <input type="text" class="input-medium search-query">
-                                <button type="submit" class="btn" data-role="none">Search</button>
+                                <button type="submit" class="btn" data-role="none" id="discoverSearch">Search</button>
                             </form>
 
                             <!-- map -->

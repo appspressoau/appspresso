@@ -37,10 +37,24 @@ $('#feedlist').live('pageinit', function(event) {
       updates.push(update);
     });
 
+    $('<div/>', {
+      'class': 'my-new-list',
+      html: updates.join('')
+    }).appendTo('#feedlist');
+
   });
 });
 
 $('#find').live('pageinit', function(event) {
+  $('#discoverSearch').click(function(eventObj) {
+    performSearch('');
+    eventObj.preventDefault();
+  });
+
+  performSearch('');
+});
+
+function performSearch(filter) {
   $.getJSON('nearby.json', function(data) {
     var results = [];
 
@@ -54,10 +68,14 @@ $('#find').live('pageinit', function(event) {
       results.push(result);
     });
 
-    $('<div/>', {
-      'class': 'my-new-list',
-      html: results.join('')
-    }).appendTo('#nearby');
-
+    displayResultList(results.join(''));
   });
-});
+}
+
+function displayResultList(elems) {
+  $('#nearby').children().remove()
+  $('<div/>', {
+    'class': 'my-new-list',
+    html: elems
+  }).appendTo('#nearby');
+}
