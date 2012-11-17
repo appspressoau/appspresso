@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Appspresso (1)</title>
+    <title>Appuccino (1)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content=""><!-- App splash screen -->
@@ -49,11 +49,13 @@
 
         <div class="row-fluid">
             <div class="span6">
-                <!-- Start of first page: #one -->
 
-                <div id="header" data-role="page" id="one">
-                    <div data-role="header">
-                        <h1 style="">Appacino</h1>
+
+                <!-- Home screen -->
+
+                <div  data-role="page" id="one">
+                    <div class="static-header" data-role="header">
+                        <h1 style="">Appuccino</h1>
                     </div><!-- /header -->
 
                     <div data-role="content">
@@ -67,40 +69,21 @@
                     </div><!-- /content -->
 
                     <div data-role="footer" data-theme="d">
-                        <?php require_once("navigation.php");?>
+                        <?php require("navigation.php");?>
                     </div><!-- /footer -->
                 </div><!-- /page one -->
 
 
 
 
-                <!-- Start of second page: #two -->
 
-                <div data-role="page" id="two" data-theme="a">
-                    <div data-role="header">
-                        <h1>Two</h1>
-                    </div><!-- /header -->
-
-                    <div data-role="content" data-theme="a">
-                        <h2>Two</h2>
-
-                        <p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.</p>
-
-                        <p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>
-
-                        <p><a href="#one" data-direction="reverse" data-role="button" data-theme="b">Back to page "one"</a></p>
-                    </div><!-- /content -->
-
-                    <div data-role="footer">
-                        <h4>Page Footer</h4>
-                    </div><!-- /footer -->
-                </div><!-- /page two -->
-                <!-- Start of third page: #popup -->
+                <!-- Login modal -->
 
                 <div data-role="page" id="popup-login">
-                    <div data-role="header" data-theme="e">
-                        <h1>Login</h1>
+                    <div class="static-header" data-role="header">
+                        <h1 style="">Appuccino</h1>
                     </div><!-- /header -->
+                    <h2>Login</h2>
                     <div data-role="content" data-theme="d">
                         <form>
                             <input type="text" placeholder="Email">
@@ -110,15 +93,20 @@
                         <p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back</a></p>
                     </div><!-- /content -->
 
-                    <div data-role="footer">
-                        <h4>Page Footer</h4>
+                    <div data-role="footer" data-theme="d">
+
                     </div><!-- /footer -->
                 </div><!-- /page popup-login -->
 
+
+
+                <!-- Registration modal -->
+
                 <div data-role="page" id="popup-register">
-                    <div data-role="header" data-theme="e">
-                        <h1>Register</h1>
+                    <div class="static-header" data-role="header">
+                        <h1 style="">Appuccino</h1>
                     </div><!-- /header -->
+                    <h2>Register</h2>
                     <div data-role="content" data-theme="d">
                         <form>
                             <input type="text" placeholder="Email">
@@ -127,10 +115,34 @@
                         <p><a href="#feed" data-role="button" data-inline="true" data-icon="back">Register</a></p>
                     </div><!-- /content -->
 
-                    <div data-role="footer">
-                        <h4>Page Footer</h4>
+                    <div data-role="footer" data-theme="d">
                     </div><!-- /footer -->
                 </div><!-- /page popup -->
+
+
+
+                <!-- Activity Feed -->
+
+                <div data-role="page" id="feed">
+                    <div class="static-header" data-role="header">
+                        <h1>Appuccino</h1>
+                    </div><!-- /header -->
+
+                    <div data-role="content" data-theme="d">
+                        <h2>Activity Feed</h2>
+                        <ul class="nav nav-tabs nav-stacked">
+                            <li><a href="#">Joe bought a coffee form <i>that coffee place</i></a></li>
+                            <li><a href="#">Steve just unlocked the <i>Coffee Fiend</i> badge</a></li>
+                        </ul>
+                    </div><!-- /content -->
+
+                    <div data-role="footer" data-theme="d">
+                        <?php require("navigation.php");?>
+                    </div><!-- /footer -->
+                </div><!-- /page popup-login -->
+
+
+
             </div>
         </div>
         <hr>

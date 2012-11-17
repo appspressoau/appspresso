@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Appspresso (2)</title>
+    <title>Appuccino (2)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content=""><!-- App splash screen -->
@@ -53,7 +53,7 @@
 
                 <div id="header" data-role="page" id="one">
                     <div data-role="header">
-                        <h1 style="">Appacino</h1>
+                        <h1 style="">Appuccino</h1>
                     </div><!-- /header -->
 
                     <div data-role="content">
