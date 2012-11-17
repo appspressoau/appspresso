@@ -22,18 +22,42 @@ $('#feedlist').live('pageinit', function(event) {
         update += '<span class="storename"> ' + obj.store_name + ' </span>';
       }
 
+      if (obj.type == 'rating') {
+        ratingtypes = ['quality', 'service', 'ambiance'];
+        for (var i=0; i < ratingtypes.length; i++) {
+          update += '<span class="rating-'+ratingtypes[i]+' score-'+obj[ratingtypes[i]]+'" />';
+        }
+      }
+
       if (obj.body) {
         update += '<span class="body">'+obj.body+'</span>';
       }
+      update += '<span class="when"> ' + obj.when + '</span>';
       update += '</div>';
       updates.push(update);
     });
 
+  });
+});
+
+$('#nearby').live('pageinit', function(event) {
+  $.getJSON('nearby.json', function(data) {
+    var results = [];
+
+    $.each(data, function(idx, obj) {
+      console.log(obj);
+      result = '<div class="searchresult">';
+      result += '<span class="storename"> ' + obj.name + ' </span>';
+      result += '<span class="address"> ' + obj.address+ ' </span>';
+      result += '<span class="distance"> ' + obj.distance + ' </span>';
+      result += '</div>';
+      results.push(result);
+    });
+
     $('<div/>', {
       'class': 'my-new-list',
-      html: updates.join('')
-    }).appendTo('#feedlist');
+      html: results.join('')
+    }).appendTo('#nearby');
 
-    alert(updates.join(''));
   });
 });
