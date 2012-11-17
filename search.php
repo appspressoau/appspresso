@@ -12,7 +12,7 @@ $location = isset($_GET['query']) && strlen($_GET['query']) ? $_GET['query'] : '
 list($lat,$lng) = $foursquare->GeoLocate($location);
 
 // Prepare parameters
-$params = array("ll"=>"$lat,$lng","query"=>"coffee");
+$params = array("ll"=>"$lat,$lng","categoryId"=>"4bf58dd8d48988d1e0931735");
 
 // Perform a request to a public resource
 $response = $foursquare->GetPublic("venues/search",$params);
