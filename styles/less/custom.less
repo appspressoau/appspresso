@@ -1,5 +1,7 @@
+body .ui-page{
+}
+
 .static-header{
-    background: @black;
     margin:0;
 
     h1 {
@@ -15,6 +17,8 @@
         margin-top:7px !important;
     }
 }
+
+
 
 
 
@@ -75,8 +79,9 @@ span.ui-btn-text {
 
 .form-search {
     input.ui-input-text {
-        width: auto;
+        width: 100%;
         display:inline !important;
+        margin:0;
     }
 
     .btn {
@@ -106,24 +111,39 @@ form {
       -------------------------------------------------- */
       #footer {
           background: @black !important;
+          * {
+              border: 0 none; // kills that pesky line of unknown origin!!
+          }
 
       }
       #global-nav {
         text-align: center;
         width: 100%;
+
+        .ui-controlgroup-controls {
+            width: 100%;
+        }
         a {
             color: @white !important;
+            &:hover {
+                background: none;
+            }
         }
 
         i {
              margin: 0 5px;
              padding: 10px;
-             font-size:24px;
+             font-size:35px;
 
-            &:hover {
-                background: #666;
-            }
         }
+        li {
+            display: inline-block;
+            font-weight: normal;
+            width: 30%;
+            padding-top: 9px;
+
+
+                   }
 
       }
 

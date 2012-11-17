@@ -64,9 +64,12 @@
 
                     <div data-role="content" data-theme="d">
                         <h2>Find Coffee</h2>
+
                             <form class="form-search">
-                                <input type="text" class="input-medium search-query">
+                                <div class="input-append">
+                                <input type="text" class="input-medium search-query search-query span6">
                                 <button type="submit" class="btn" data-role="none" id="discoverSearch">Search</button>
+                                </div>
                             </form>
 
                             <!-- map -->
