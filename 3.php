@@ -78,6 +78,7 @@
                             <div id="nearby">
                             <ul class="nav nav-tabs nav-stacked activity-list">
 
+                                <!-- dynamically grabbed shops land here -->
 
                             </ul>
                             </div>

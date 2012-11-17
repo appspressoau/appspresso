@@ -58,7 +58,7 @@ $('#find').live('pageinit', function(event) {
 
 function performSearch(filter) {
   $.getJSON('search.php?query=' + filter, function(data) {
-    var results = []; 
+    var results = [];
     results.push('<ul class="nav nav-tabs nav-stacked activity-list">');
 
     $.each(data, function(idx, obj) {
@@ -67,7 +67,7 @@ function performSearch(filter) {
                                 <li><a href="#shop-alturacoffee">\
                                     <i class="icon-chevron-right"></i>\
                                         <div class="media">\
-                                            <img class="media-object pull-left" src="http://placehold.it/64x64">\
+                                            <i class="icon-map-marker media-object pull-left"></i>\
                                             <div class="media-body">\
                                             <h4 class="media-heading">'+ obj.name +'</h4><br />';
 

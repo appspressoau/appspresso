@@ -911,6 +911,7 @@ a.label:hover,a.badge:hover{color:#ffffff;text-decoration:none;cursor:pointer;}
 .activity-list .icon-chevron-right{float:right;margin-right:-6px;margin-top:2px;}
 .activity-list .media{margin-top:0;}.activity-list .media .media-heading{display:inline-block;}
 .activity-list .icon-star,.activity-list .icon-star-empty{width:9px;}
+#nearby i.icon-map-marker{font-size:30px;margin-right:0;margin-left:-10px;}
 .map-static{background:url('../../img/map.png') no-repeat center center;height:200px;width:100%;margin-bottom:5px;}
 .shop-tags,.shop-actions{margin-bottom:10px;}
 .shop-actions{text-align:center;width:100%;}.shop-actions a{width:90%;}
