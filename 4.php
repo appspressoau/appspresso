@@ -56,7 +56,7 @@
 
                 <!-- Activity Feed -->
 
-                <div data-role="page" id="find">
+                <div data-role="page" id="stores">
                     <div class="static-header" data-role="header">
                         <h1>Appuccino</h1>
                     </div><!-- /header -->
@@ -67,17 +67,24 @@
 
                             <!-- list -->
                             <div data-role="page" id="nearby"></div>
+
+                            <div class="btn-group">
+                                <a class="btn active" data-role="none">Stores</a>
+                                <a class="btn" data-role="none" href="#fiends">Fiends</a>
+                            </div>
+
                             <ul class="nav nav-tabs nav-stacked activity-list">
                                 <li><a href="#shop-alturacoffee">
                                     <i class="icon-chevron-right"></i>
                                         <div class="media">
                                             <img class="media-object pull-left" src="http://placehold.it/64x64">
                                             <div class="media-body">
-                                            <h4 class="media-heading">Altura Coffee</h4><br />
-                                            <span class="label label-success">Fair Trade</span>
-                                            <span class="label label-success">Single Origin</span>
+
+                                            <h4 class="media-heading"><i class="icon-trophy"></i>Altura Coffee</h4><br />
                                             <!-- Nested media object -->
-                                            <div class="media"></div>
+                                            <div class="media">
+                                                <span class="label label-success">3,142 sips</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </a></li>
@@ -88,13 +95,17 @@
                                         <div class="media">
                                             <img class="media-object pull-left" src="http://placehold.it/64x64">
                                             <div class="media-body">
-                                            <h4 class="media-heading">Mr Coffee</h4><br />
-                                            <span class="label label-success">Fair Trade</span>
+                                            <h4 class="media-heading">Kaffe Haus</h4><br />
                                             <!-- Nested media object -->
-                                            <div class="media"></div>
+                                            <div class="media">
+                                                <span class="label label-success">2,456 sips</span>
+
+                                            </div>
                                         </div>
                                     </div>
                                 </a></li>
+
+
 
                             </ul>
 
@@ -107,33 +118,38 @@
 
 
 
-                <!-- Example Coffee Shop Profile -->
-
-                <div data-role="page" id="shop-alturacoffee">
+                <div data-role="page" id="fiends">
                     <div class="static-header" data-role="header">
-                        <a href="#find"><button class="btn btn-inverse" data-role="none" >back</button></a>
                         <h1>Appuccino</h1>
                     </div><!-- /header -->
-
+                    <div class="submenu"><h2>Belong</h2></div>
                     <div data-role="content" data-theme="d">
-                        <div class="shop-rating">
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star-empty"></i>
-                        </div>
-                        <h2>Altura Coffee</h2>
 
-                        <div class="shop-tags">
-                            <span class="label label-success">Fair Trade</span>
-                            <span class="label label-success">Single Origin</span>
-                        </div>
 
-                        <div class="shop-actions"><a class="btn btn-primary" data-role="none">Place order</a>
-                        <a class="btn" data-role="none">Rate your coffee</a></div>
 
-                        <ul class="nav nav-tabs nav-stacked activity-list">
+                            <!-- list -->
+                            <div data-role="page" id="nearby"></div>
+
+                            <div class="btn-group">
+                                <a class="btn " data-role="none" href="#stores">Stores</a>
+                                <a class="btn active" data-role="none">Fiends</a>
+                            </div>
+
+                            <ul class="nav nav-tabs nav-stacked activity-list">
+
+                            <li><a href="#">
+                                    <i class="icon-chevron-right"></i>
+                                        <div class="media">
+                                            <img class="media-object pull-left" src="content/users/3.png" alt="" width="48" height="48">
+                                            <div class="media-body">
+                                            <h4 class="media-heading"><i class="icon-trophy"></i>Ashley Holman</h4>
+                                            <div class="media">
+
+                                            <span class="label label-success">1,337 sips</span>
+                                            </div>
+                                            </div>
+                                            </div>
+                                </a></li>
                             <li><a href="#">
                                     <i class="icon-chevron-right"></i>
                                         <div class="media">
@@ -141,31 +157,14 @@
                                             <div class="media-body">
                                             <h4 class="media-heading">Zoe Bogner</h4>
                                             <div class="media">
-                                            "Mmmmm, hazelnuts!"<br />
-                                            Rating: <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star-empty"></i>
+                                            <span class="label label-success">302 sips</span>
                                             </div>
                                             </div>
                                             </div>
                                 </a></li>
 
-                                <li><a href="#">
-                                    <i class="icon-chevron-right"></i>
-                                        <div class="media">
-                                            <img class="media-object pull-left" src="content/users/3.png" alt="" width="48" height="48">
-                                            <div class="media-body">
-                                            <h4 class="media-heading">Ashley Holman</h4>
-                                            <div class="media">
-                                            Drank a large latte, extra hot, brewed by <span class="brewer" href="#bmcb">Brewey McBrewer</span>.
-                                            </div>
-                                            </div>
-                                            </div>
-                                </a></li>
+
                         </ul>
-
 
                     </div><!-- /content -->
 
@@ -173,8 +172,6 @@
                         <?php require("navigation.php");?>
                     </div><!-- /footer -->
                 </div><!-- /page -->
-
-
 
             </div>
         </div>
