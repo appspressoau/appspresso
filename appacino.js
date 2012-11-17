@@ -69,11 +69,18 @@ function performSearch(filter) {
                                         <div class="media">\
                                             <img class="media-object pull-left" src="http://placehold.it/64x64">\
                                             <div class="media-body">\
-                                            <h4 class="media-heading">'+ obj.name +'</h4><br />\
-                                            <span class="label label-success">Fair Trade</span>\
-                                            <span class="label label-success">Single Origin</span>\
-                                            <!-- Nested media object -->\
-                                            <div class="media"><span>'+obj.address+'</span>\
+                                            <h4 class="media-heading">'+ obj.name +'</h4><br />';
+
+      /** mockup so that first and second results have tags **/
+      if (idx <= 1) {
+        result += '<span class="label label-success">Fair Trade</span> ';
+      }
+      if (idx < 1) {
+        result += '<span class="label label-success">Single Origin</span> ';
+      }
+      /** end mockup **/
+
+      result += '                           <div class="media"><span>'+obj.address+'</span>\
                                             <span>'+obj.distance+'</span></div>\
                                         </div>\
                                     </div>\
