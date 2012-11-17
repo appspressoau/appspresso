@@ -71,19 +71,32 @@
 
                             <!-- list -->
                             <ul class="nav nav-tabs nav-stacked activity-list">
+                                <li><a href="#shop-alturacoffee">
+                                    <i class="icon-chevron-right"></i>
+                                        <div class="media">
+                                            <img class="media-object pull-left" src="http://placehold.it/64x64">
+                                            <div class="media-body">
+                                            <h4 class="media-heading">Altura Coffee</h4><br />
+                                            <span class="label label-success">Fair Trade</span>
+                                            <span class="label label-success">Single Origin</span>
+                                            <!-- Nested media object -->
+                                            <div class="media"></div>
+                                        </div>
+                                    </div>
+                                </a></li>
+
+
                                 <li><a href="#">
                                     <i class="icon-chevron-right"></i>
                                         <div class="media">
                                             <img class="media-object pull-left" src="http://placehold.it/64x64">
                                             <div class="media-body">
-                                            <h4 class="media-heading">Shop One</h4>
-
+                                            <h4 class="media-heading">Mr Coffee</h4><br />
+                                            <span class="label label-success">Fair Trade</span>
                                             <!-- Nested media object -->
-                                            <div class="media">
-                                            La la la
-                                            </div>
-                                            </div>
-                                            </div>
+                                            <div class="media"></div>
+                                        </div>
+                                    </div>
                                 </a></li>
 
                             </ul>
@@ -93,7 +106,43 @@
                     <div data-role="footer" data-theme="d">
                         <?php require("navigation.php");?>
                     </div><!-- /footer -->
-                </div><!-- /page popup-login -->
+                </div><!-- /page -->
+
+
+
+                <!-- Example Coffee Shop Profile -->
+
+                <div data-role="page" id="shop-alturacoffee">
+                    <div class="static-header" data-role="header">
+                        <h1>Appuccino</h1>
+                    </div><!-- /header -->
+
+                    <div data-role="content" data-theme="d">
+                        <div class="shop-rating">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star-empty"></i>
+                        </div>
+                        <h2>Altura Coffee</h2>
+
+                        <div class="shop-tags">
+                            <span class="label label-success">Fair Trade</span>
+                            <span class="label label-success">Single Origin</span>
+                        </div>
+
+                        <div><a class="btn btn-primary" data-role="none">Place order</a>
+                        <a class="btn" data-role="none">Rate your coffee</a></div>
+
+
+
+                    </div><!-- /content -->
+
+                    <div data-role="footer" data-theme="d">
+                        <?php require("navigation.php");?>
+                    </div><!-- /footer -->
+                </div><!-- /page -->
 
 
 
