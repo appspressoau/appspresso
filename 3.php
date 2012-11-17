@@ -114,6 +114,7 @@
 
                 <div data-role="page" id="shop-alturacoffee">
                     <div class="static-header" data-role="header">
+                        <a href="#find"><button class="btn btn-inverse" data-role="none" >back</button></a>
                         <h1>Appuccino</h1>
                     </div><!-- /header -->
 
@@ -132,9 +133,41 @@
                             <span class="label label-success">Single Origin</span>
                         </div>
 
-                        <div><a class="btn btn-primary" data-role="none">Place order</a>
+                        <div class="shop-actions"><a class="btn btn-primary" data-role="none">Place order</a>
                         <a class="btn" data-role="none">Rate your coffee</a></div>
 
+                        <ul class="nav nav-tabs nav-stacked activity-list">
+                            <li><a href="#">
+                                    <i class="icon-chevron-right"></i>
+                                        <div class="media">
+                                            <img class="media-object pull-left" src="content/users/1.png" alt="1" width="48" height="48">
+                                            <div class="media-body">
+                                            <h4 class="media-heading">Zoe Bogner</h4>
+                                            <div class="media">
+                                            "Mmmmm, hazelnuts!"<br />
+                                            Rating: <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star-empty"></i>
+                                            </div>
+                                            </div>
+                                            </div>
+                                </a></li>
+
+                                <li><a href="#">
+                                    <i class="icon-chevron-right"></i>
+                                        <div class="media">
+                                            <img class="media-object pull-left" src="content/users/3.png" alt="" width="48" height="48">
+                                            <div class="media-body">
+                                            <h4 class="media-heading">Name Name</h4>
+                                            <div class="media">
+                                            ordered a large latte
+                                            </div>
+                                            </div>
+                                            </div>
+                                </a></li>
+                        </ul>
 
 
                     </div><!-- /content -->

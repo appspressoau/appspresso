@@ -120,7 +120,7 @@ h1,h2,h3,h4,h5,h6{margin:10px 0;font-family:inherit;font-weight:bold;line-height
 h1,h2,h3{line-height:40px;}
 h1{font-size:38.5px;}
 h2{font-size:28px;}
-h3{font-size:24.5px;}
+h3{font-size:23.8px;}
 h4{font-size:17.5px;}
 h5{font-size:14px;}
 h6{font-size:11.9px;}
@@ -905,11 +905,13 @@ a.label:hover,a.badge:hover{color:#ffffff;text-decoration:none;cursor:pointer;}
 .hero-unit{padding:60px;margin-bottom:30px;font-size:18px;font-weight:200;line-height:30px;color:inherit;background-color:#eeeeee;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}.hero-unit h1{margin-bottom:0;font-size:60px;line-height:1;color:inherit;letter-spacing:-1px;}
 .hero-unit li{line-height:30px;}
 .static-header{background:#000000;margin:0;}.static-header h1{font-family:Lobster;font-size:30px !important;font-weight:normal;margin:0 !important;color:#ffffff;padding:5px 0 !important;}
+.static-header button{margin-top:7px !important;}
 .activity-list li a{color:#333333 !important;font-weight:normal !important;}
 .activity-list .icon-chevron-right{float:right;margin-right:-6px;margin-top:2px;}
 .activity-list .media{margin-top:0;}.activity-list .media .media-heading{display:inline-block;}
+.activity-list .icon-star,.activity-list .icon-star-empty{width:9px;}
 .map-static{background:url('../../img/map.png') no-repeat center center;height:200px;width:100%;margin-bottom:5px;}
-.shop-tags{margin-bottom:10px;}
+.shop-tags,.shop-actions{margin-bottom:10px;}
 .shop-rating{float:right;font-size:20px;margin-top:25px;}
 span.ui-btn-text{}
 .ui-btn{display:inline !important;}
