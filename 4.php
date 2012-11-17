@@ -76,7 +76,7 @@
                         <h1>Appuccino</h1>
                     </div><!-- /header -->
                     <div class="submenu"><h2>Belong</h2></div>
-                    <h4>Leaderboard</h4>
+
                     <div data-role="content" data-theme="d">
 
 
@@ -87,6 +87,8 @@
                                 <a class="btn active" data-role="none">Stores</a>
                                 <a class="btn" data-role="none" href="#fiends">Fiends</a>
                             </div>
+
+                            <h3 class="sub">Leaderboard</h3>
 
                             <ul class="nav nav-tabs nav-stacked activity-list">
                                 <li><a href="#shop-alturacoffee">
@@ -148,6 +150,8 @@
                                 <a class="btn active" data-role="none">Fiends</a>
                             </div>
 
+                            <h3 class="sub">Leaderboard</h3>
+
                             <ul class="nav nav-tabs nav-stacked activity-list">
 
                             <li><a href="#">
@@ -182,6 +186,76 @@
                     </div><!-- /content -->
 
                     <!--  Footer -->
+                    <?php echo $footer; ?>
+                </div><!-- /page -->
+
+
+
+
+                <div data-role="page" id="shop-alturacoffee">
+                    <div class="static-header" data-role="header">
+                        <a href="#stores"><button class="btn btn-inverse" data-role="none" >back</button></a>
+                        <h1>Appuccino</h1>
+                    </div><!-- /header -->
+                    <div class="submenu"><h2>Discover</h2></div>
+
+                    <div data-role="content" data-theme="d">
+                        <div class="shop-rating">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star-empty"></i>
+                        </div>
+                        <h2><i class="icon-trophy"></i> Altura Coffee</h2>
+
+                        <div class="shop-tags">
+                            <span class="label label-success">Fair Trade</span>
+                            <span class="label label-success">Single Origin</span>
+                        </div>
+                        <span class="label label-success">3,142 sips</span>
+                        <br /><br />
+
+                        <div class="shop-actions">
+                        <a class="btn" data-role="none" href="#rate-altura">Rate your coffee</a></div>
+
+                        <ul class="nav nav-tabs nav-stacked activity-list">
+                            <li><a href="#">
+                                    <i class="icon-chevron-right"></i>
+                                        <div class="media">
+                                            <img class="media-object pull-left" src="content/users/1.png" alt="1" width="48" height="48">
+                                            <div class="media-body">
+                                            <h4 class="media-heading">Zoe Bogner</h4>
+                                            <div class="media">
+                                            "Mmmmm, hazelnuts!"<br />
+                                            Rating: <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star-empty"></i>
+                                            </div>
+                                            </div>
+                                            </div>
+                                </a></li>
+
+                                <li><a href="#">
+                                    <i class="icon-chevron-right"></i>
+                                        <div class="media">
+                                            <img class="media-object pull-left" src="content/users/3.png" alt="" width="48" height="48">
+                                            <div class="media-body">
+                                            <h4 class="media-heading">Ashley Holman</h4>
+                                            <div class="media">
+                                            Drank a large latte, extra hot, brewed by <span class="brewer" href="#bmcb">Brewey McBrewer</span>.
+                                            </div>
+                                            </div>
+                                            </div>
+                                </a></li>
+                        </ul>
+
+
+                    </div><!-- /content -->
+
+                    <!-- Footer-->
                     <?php echo $footer; ?>
                 </div><!-- /page -->
 
