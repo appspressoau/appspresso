@@ -1,4 +1,5 @@
 $('#feedlist').live('pageinit', function(event) {
+  fixLinks();
   $.getJSON('activityfeed.json', function(data) {
     var updates = [];
 
@@ -46,6 +47,7 @@ $('#feedlist').live('pageinit', function(event) {
 });
 
 $('#find').live('pageinit', function(event) {
+  fixLinks();
   $('#discoverSearch').click(function(eventObj) {
     performSearch('');
     eventObj.preventDefault();
@@ -55,7 +57,7 @@ $('#find').live('pageinit', function(event) {
 });
 
 function performSearch(filter) {
-  $.getJSON('nearby.json', function(data) {
+  $.getJSON('search.php', function(data) {
     var results = [];
 
     $.each(data, function(idx, obj) {
@@ -79,3 +81,14 @@ function displayResultList(elems) {
     html: elems
   }).appendTo('#nearby');
 }
+
+function fixLinks() {
+  $("a").click(function (event) {
+    event.preventDefault();
+    window.location = $(this).attr("href");
+  });
+}
+
+$('#one').live('pageinit', function(event) {
+  fixLinks();
+});
