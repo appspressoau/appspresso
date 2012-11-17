@@ -125,6 +125,7 @@
                         <a href="#find"><button class="btn btn-inverse" data-role="none" >back</button></a>
                         <h1>Appuccino</h1>
                     </div><!-- /header -->
+                    <div class="submenu"><h2>Discover</h2></div>
 
                     <div data-role="content" data-theme="d">
                         <div class="shop-rating">
@@ -141,8 +142,8 @@
                             <span class="label label-success">Single Origin</span>
                         </div>
 
-                        <div class="shop-actions"><a class="btn btn-primary" data-role="none">Place order</a>
-                        <a class="btn" data-role="none">Rate your coffee</a></div>
+                        <div class="shop-actions">
+                        <a class="btn" data-role="none" href="#rate-altura">Rate your coffee</a></div>
 
                         <ul class="nav nav-tabs nav-stacked activity-list">
                             <li><a href="#">
@@ -186,6 +187,34 @@
                 </div><!-- /page -->
 
 
+
+                <!-- Review a coffee place (example: Altura) -->
+
+                <div data-role="page" id="rate-altura">
+                    <div class="static-header" data-role="header">
+                        <h1>Appuccino</h1>
+                    </div><!-- /header -->
+                    <div class="submenu"><h2>Discover</h2></div>
+                    <div data-role="content" data-theme="d">
+
+                    <p>Please rate your experience at</p>
+                    <h2>Altura Coffee</h2>
+                    <span>Speed</span>
+                    <div class="shop-rating make">
+                        <i class="icon-star-empty"></i>
+                        <i class="icon-star-empty"></i>
+                        <i class="icon-star-empty"></i>
+                        <i class="icon-star-empty"></i>
+                        <i class="icon-star-empty"></i>
+                    </div>
+
+
+                    </div><!-- /content -->
+
+                    <div data-role="footer" data-theme="d">
+                        <?php require("navigation.php");?>
+                    </div><!-- /footer -->
+                </div><!-- /page -->
 
             </div>
         </div>

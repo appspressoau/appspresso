@@ -913,7 +913,8 @@ a.label:hover,a.badge:hover{color:#ffffff;text-decoration:none;cursor:pointer;}
 .activity-list .icon-star,.activity-list .icon-star-empty{width:9px;}
 .map-static{background:url('../../img/map.png') no-repeat center center;height:200px;width:100%;margin-bottom:5px;}
 .shop-tags,.shop-actions{margin-bottom:10px;}
-.shop-rating{float:right;font-size:20px;margin-top:25px;}
+.shop-actions{text-align:center;width:100%;}.shop-actions a{width:90%;}
+.shop-rating{float:right;font-size:20px;margin-top:25px;}.shop-rating.make{font-size:30px;margin-top:15px;}
 span.ui-btn-text{}
 .ui-btn{display:inline !important;}
 .ui-btn.ui-shadow,.ui-btn-hover-d{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;background:none;border:0 none;}
