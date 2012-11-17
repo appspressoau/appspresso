@@ -31,6 +31,7 @@
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./styles/css/responsive.css" rel="stylesheet" type="text/css">
+<!--     <link href="./styles/css/jquery.mobile-1.2.0.css" rel="stylesheet" type="text/css"> -->
     <link href="./styles/css/jquery.mobile-1.2.0.css" rel="stylesheet" type="text/css">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -49,88 +50,91 @@
 
         <div class="row-fluid">
             <div class="span6">
-                <!-- Start of first page: #one -->
 
-                <div id="header" data-role="page" id="one">
-                    <div data-role="header">
-                        <h1 style="">Appuccino</h1>
+
+                <!-- Activity Feed -->
+
+                <div data-role="page" id="myorders">
+                    <div class="static-header" data-role="header">
+                        <h1>Appuccino</h1>
                     </div><!-- /header -->
 
-                    <div data-role="content">
+                    <div data-role="content" data-theme="d">
+                        <h2>My Orders</h2>
 
-                        <!--
-<p><a href="#two" data-role="button">Show page "two"</a></p>
+                            <!-- list -->
+                            <ul class="nav nav-tabs nav-stacked activity-list">
+                                <li><a href="#myorders-detail1">
+                                    <i class="icon-chevron-right"></i>
+                                        <div class="media">
+                                            <div class="media-body">
+                                            <h4 class="media-heading">Altura Coffee</h4><br />
+                                            <p>1x Flat White</p>
 
--->
-                        <p><a href="#popup-login" data-role="button" data-rel="dialog" data-transition="pop">Login</a></p>
-                        <p><a href="#popup-register" data-role="button" data-rel="dialog" data-transition="pop">Register</a></p>
+                                            <p>Est. til ready: 10mins</p>
+                                                                                    </div>
+                                    </div>
+                                </a></li>
+
+
+
+                            </ul>
+
                     </div><!-- /content -->
 
                     <div data-role="footer" data-theme="d">
-                        <?php require_once("navigation.php");?>
+                        <?php require("navigation.php");?>
                     </div><!-- /footer -->
-                </div><!-- /page one -->
+                </div><!-- /page -->
 
 
 
 
-                <!-- Start of second page: #two -->
 
-                <div data-role="page" id="two" data-theme="a">
-                    <div data-role="header">
-                        <h1>Two</h1>
+                <!-- Order detail -->
+
+                <div data-role="page" id="myorders-detail1">
+                    <div class="static-header" data-role="header">
+                        <h1>Appuccino</h1>
                     </div><!-- /header -->
 
-                    <div data-role="content" data-theme="a">
-                        <h2>Two</h2>
-
-                        <p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.</p>
-
-                        <p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>
-
-                        <p><a href="#one" data-direction="reverse" data-role="button" data-theme="b">Back to page "one"</a></p>
-                    </div><!-- /content -->
-
-                    <div data-role="footer">
-                        <h4>Page Footer</h4>
-                    </div><!-- /footer -->
-                </div><!-- /page two -->
-                <!-- Start of third page: #popup -->
-
-                <div data-role="page" id="popup-login">
-                    <div data-role="header" data-theme="e">
-                        <h1>Login</h1>
-                    </div><!-- /header -->
                     <div data-role="content" data-theme="d">
-                        <form>
-                            <input type="text" placeholder="Email">
-                            <input type="password" placeholder="Password">
-                        </form>
-                        <p><a href="#feed" data-role="button" data-inline="true" data-icon="back">Login</a></p>
-                        <p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back</a></p>
+                        <h2></h2>
+
+                            <!-- list -->
+                            <ul class="nav nav-tabs nav-stacked activity-list">
+                                <li><a href="#shop-alturacoffee">
+                                    <i class="icon-chevron-right"></i>
+                                        <div class="media">
+                                            <div class="media-body">
+                                            <h4 class="media-heading">Altura Coffee</h4><br />
+                                            <p>1x Flat White</p>
+
+                                            <p>Est. til ready: 10mins</p>
+
+                                            <button style="width:100%" class="btn" data-role="none">Pause</button><br /><br />
+                                            <button style="width:100%" class="btn btn-danger" data-role="none">Cancel</button>
+
+                                        </div>
+                                    </div>
+                                </a></li>
+
+
+
+                            </ul>
+
                     </div><!-- /content -->
 
-                    <div data-role="footer">
-                        <h4>Page Footer</h4>
+                    <div data-role="footer" data-theme="d">
+                        <?php require("navigation.php");?>
                     </div><!-- /footer -->
-                </div><!-- /page popup-login -->
+                </div><!-- /page -->
 
-                <div data-role="page" id="popup-register">
-                    <div data-role="header" data-theme="e">
-                        <h1>Register</h1>
-                    </div><!-- /header -->
-                    <div data-role="content" data-theme="d">
-                        <form>
-                            <input type="text" placeholder="Email">
-                            <input type="password" placeholder="Password">
-                        </form>
-                        <p><a href="#feed" data-role="button" data-inline="true" data-icon="back">Register</a></p>
-                    </div><!-- /content -->
 
-                    <div data-role="footer">
-                        <h4>Page Footer</h4>
-                    </div><!-- /footer -->
-                </div><!-- /page popup -->
+
+
+
+
             </div>
         </div>
         <hr>
