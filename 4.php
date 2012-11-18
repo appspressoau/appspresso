@@ -97,7 +97,21 @@
                                             <i class="icon-map-marker media-object pull-left"></i>
                                             <div class="media-body">
 
-                                            <h4 class="media-heading"><i class="icon-trophy"></i>Altura Coffee</h4><br />
+                                            <h4 class="media-heading"><i class="icon-trophy"></i>CIBO Norwood</h4><br />
+                                            <!-- Nested media object -->
+                                            <div class="media">
+                                                <span class="label label-success">12,892 sips</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a></li>
+                               <li><a href="#shop-alturacoffee">
+                                    <i class="icon-chevron-right"></i>
+                                        <div class="media">
+                                            <i class="icon-map-marker media-object pull-left"></i>
+                                            <div class="media-body">
+
+                                            <h4 class="media-heading">Altura Coffee</h4><br />
                                             <!-- Nested media object -->
                                             <div class="media">
                                                 <span class="label label-success">3,142 sips</span>
@@ -120,7 +134,21 @@
                                         </div>
                                     </div>
                                 </a></li>
+                                <li><a href="#shop-alturacoffee">
+                                    <i class="icon-chevron-right"></i>
+                                        <div class="media">
+                                            <i class="icon-map-marker media-object pull-left"></i>
+                                            <div class="media-body">
 
+                                            <h4 class="media-heading">Signature</h4><br />
+                                            <!-- Nested media object -->
+                                            <div class="media">
+                                                <span class="label label-success">432 sips</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a></li>
+ 
 
 
                             </ul>
@@ -175,6 +203,19 @@
                             <li><a href="#">
                                     <i class="icon-chevron-right"></i>
                                         <div class="media">
+                                            <img class="media-object pull-left" src="content/users/2.jpg" alt="" width="48" height="48">
+                                            <div class="media-body">
+                                            <h4 class="media-heading"><i class="icon-trophy"></i>Jemma Schilling</h4>
+                                            <div class="media">
+
+                                            <span class="label label-success">4,096 sips</span>
+                                            </div>
+                                            </div>
+                                            </div>
+                                </a></li>
+                             <li><a href="#">
+                                    <i class="icon-chevron-right"></i>
+                                        <div class="media">
                                             <img class="media-object pull-left" src="content/users/3.png" alt="" width="48" height="48">
                                             <div class="media-body">
                                             <h4 class="media-heading"><i class="icon-trophy"></i>Ashley Holman</h4>
@@ -197,6 +238,19 @@
                                             </div>
                                             </div>
                                 </a></li>
+                            <li><a href="#">
+                                    <i class="icon-chevron-right"></i>
+                                        <div class="media">
+                                            <img class="media-object pull-left" src="content/users/4.jpg" alt="1" width="48" height="48">
+                                            <div class="media-body">
+                                            <h4 class="media-heading">Haris Qureshi</h4>
+                                            <div class="media">
+                                            <span class="label label-success">301 sips</span>
+                                            </div>
+                                            </div>
+                                            </div>
+                                </a></li>
+
 
 
                         </ul>
