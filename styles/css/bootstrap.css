@@ -904,10 +904,12 @@ a.label:hover,a.badge:hover{color:#ffffff;text-decoration:none;cursor:pointer;}
 .carousel-caption p{margin-bottom:0;}
 .hero-unit{padding:60px;margin-bottom:30px;font-size:18px;font-weight:200;line-height:30px;color:inherit;background-color:#eeeeee;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}.hero-unit h1{margin-bottom:0;font-size:60px;line-height:1;color:inherit;letter-spacing:-1px;}
 .hero-unit li{line-height:30px;}
+.content{margin-bottom:20px;}
 .submenu{width:100%;background:#e9e4dd;margin:0;text-align:center;}.submenu h2{margin:0;font-size:1.4em;}
 .static-header{margin:0;}.static-header h1{font-family:Lobster;font-size:30px !important;font-weight:normal;margin:0 !important;color:#ffffff;padding:5px 0 !important;}
 .static-header button{margin-top:7px !important;}
 h3.sub{font-size:1.3em;margin:0 auto;}
+.time{color:#ad9a80;display:block;}
 .activity-list li a{color:#333333 !important;font-weight:normal !important;}
 .activity-list .icon-chevron-right{float:right;margin-right:-6px;margin-top:2px;}
 .activity-list .media{margin-top:0;}.activity-list .media .media-heading{display:inline-block;}

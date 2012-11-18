@@ -86,15 +86,17 @@
                             <!-- list -->
                             <div data-role="page" id="nearby"></div>
                             <ul class="nav nav-tabs nav-stacked activity-list">
+
+
                             <li><a href="#">
                                     <i class="icon-chevron-right"></i>
                                         <div class="media">
-                                            <img class="media-object pull-left" src="content/users/1.png" alt="1" width="48" height="48">
+                                            <img class="media-object pull-left" src="content/users/5.jpg" alt="1" width="48" height="48">
                                             <div class="media-body">
-                                            <h4 class="media-heading">Zoe Bogner</h4>
+                                            <h4 class="media-heading">Jenna Stavridis</h4>
                                             <div class="media">
-                                            "You must try the ciboccino!"
-                                            <span class="time">22mins ago</span>
+                                            bought a latte from <strong>The Perfect Cup</strong>
+                                            <span class="time">6mins ago</span>
                                             </div>
                                             </div>
                                             </div>
@@ -103,17 +105,73 @@
                                 <li><a href="#">
                                     <i class="icon-chevron-right"></i>
                                         <div class="media">
-                                            <img class="media-object pull-left" src="content/users/2.jpg" alt="" width="48" height="48">
+                                            <img class="media-object pull-left" src="content/users/9.jpg" alt="1" width="48" height="48">
                                             <div class="media-body">
-                                            <h4 class="media-heading">Name Name</h4>
+                                            <h4 class="media-heading">Carlo Reynolds</h4>
                                             <div class="media">
-                                            unlocked the <strong>Caffeine Fiend</strong> badge!
-                                            <span class="time">1hr ago</span>
+                                            bought a Salted Caramel Latte from <strong>Gloria Jeans Myer Foodcourt </strong>
+                                            <br /><span class="time">15mins ago</span>
                                             </div>
                                             </div>
                                             </div>
                                 </a></li>
+
+                                <li><a href="#">
+                                    <i class="icon-chevron-right"></i>
+                                        <div class="media">
+                                            <img class="media-object pull-left" src="content/users/8.jpg" alt="1" width="48" height="48">
+                                            <div class="media-body">
+                                            <h4 class="media-heading">Carly Emerson</h4>
+                                            <div class="media">
+                                            unlocked the <strong>Globetrotter</strong> badge
+                                            <br /><span class="time">about 2hrs ago</span>
+                                            </div>
+                                            </div>
+                                            </div>
+                                </a></li>
+
+
+                                <li><a href="#">
+                                    <i class="icon-chevron-right"></i>
+                                        <div class="media">
+                                            <img class="media-object pull-left" src="content/users/7.jpg" alt="1" width="48" height="48">
+                                            <div class="media-body">
+                                            <h4 class="media-heading">Eva M</h4>
+                                            <div class="media">
+                                            rated her barista <strong>Laurie Pitman</strong> at <strong>Michel's Patisserie's Adelaide Central</strong><br />
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star"></i>
+                                            <br /><span class="time">about 6hrs ago</span>
+                                            </div>
+                                            </div>
+                                            </div>
+                                </a></li>
+
+                                <li><a href="#">
+                                    <i class="icon-chevron-right"></i>
+                                        <div class="media">
+                                            <img class="media-object pull-left" src="content/users/6.jpg" alt="1" width="48" height="48">
+                                            <div class="media-body">
+                                            <h4 class="media-heading">Lauren Falconer</h4>
+                                            <div class="media">
+                                            bought a soy flat-white from <strong>Un Caffe Bar</strong><span class="time">about 7hrs ago</span>
+                                            </div>
+                                            </div>
+                                            </div>
+                                </a></li>
+
+
+
+
                         </ul>
+                        <div style="text-align: center;">
+                            <button class="btn" data-role="none">Load more..</button>
+                        </div>
+                        <br /><br /><br />
+
                     </div><!-- /content -->
 
                     <!--  Footer -->
