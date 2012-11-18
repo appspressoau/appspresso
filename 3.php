@@ -124,7 +124,9 @@ $footer = '<div data-role="footer" data-theme="d">
                             <i class="icon-star"></i>
                             <i class="icon-star-empty"></i>
                         </div>
-                        <h2>Altura Coffee</h2>
+                        <h2>Hudsons Coffee</h2>
+                        <p>33 King William St</p>
+
 
                         <div class="shop-tags">
                             <span class="label label-success">Fair Trade</span>
@@ -161,7 +163,7 @@ $footer = '<div data-role="footer" data-theme="d">
                                             <div class="media-body">
                                             <h4 class="media-heading">Ashley Holman</h4>
                                             <div class="media">
-                                            Drank a large latte, extra hot, brewed by <span class="brewer" href="#bmcb">Brewey McBrewer</span>.
+                                            Drank a large latte, extra hot, brewed by <span class="brewer" href="#bmcb"><strong>Ian Russell</strong></span>
                                             </div>
                                             </div>
                                             </div>
@@ -187,7 +189,8 @@ $footer = '<div data-role="footer" data-theme="d">
                     <div data-role="content" data-theme="d">
 
                     <p>Please rate your experience at</p>
-                    <h2>Altura Coffee</h2>
+                    <h2>Hudsons</h2>
+                    <p>33 King William St</p>
                     <span>Speed</span>
                     <div class="shop-rating make">
                         <i class="icon-star-empty"></i>
