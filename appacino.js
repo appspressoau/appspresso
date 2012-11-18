@@ -83,8 +83,10 @@ function performSearch(filter) {
       }
       /** end mockup **/
 
-      result += '                           <div class="media"><span>'+obj.address+'</span>\
-                                            <span>'+obj.distance+'</span></div>\
+      if (obj.hasOwnProperty('address')) {
+        result += '                         <div class="media"><span>'+obj.address+'</span>';
+      }
+      result += '                           <span>'+obj.distance+'</span></div>\
                                         </div>\
                                     </div>\
                                 </a></li>';
