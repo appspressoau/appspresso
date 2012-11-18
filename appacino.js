@@ -116,9 +116,11 @@ function updateMap (centerLat, centerLng, locations) {
 
     var infowindow = new google.maps.InfoWindow();
 
+    blueIcon = "img/blue_MarkerX.png";
+
     var marker, i;
 
-    for (i = 0; i < locations.length; i++) {  
+    for (i = 0; i < locations.length; i++) {
       marker = new google.maps.Marker({
         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
         map: map
@@ -131,6 +133,13 @@ function updateMap (centerLat, centerLng, locations) {
         }
       })(marker, i));
     }
+
+    // add a blue icon at the user's current location
+    marker = new google.maps.Marker({
+      position: new google.maps.LatLng(centerLat, centerLng),
+      icon: blueIcon,
+      map: map
+    });
 }
 
 function fixLinks() {
