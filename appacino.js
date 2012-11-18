@@ -57,6 +57,14 @@ $('#find').live('pageinit', function(event) {
 });
 
 function performSearch(filter) {
+  if ($.mobile.loaderWidget !== undefined) {
+    console.log($.mobile.loader);
+    $.mobile.loading( 'show', {
+      text: 'Searching ...',
+      textVisible: true,
+      html: ""
+    });
+  }
   $.getJSON('search.php?query=' + filter, function(data) {
     var results = [];
     results.push('<ul class="nav nav-tabs nav-stacked activity-list">');
@@ -96,8 +104,10 @@ function performSearch(filter) {
 
     updateMap(data.center.lat, data.center.lng, mapPoints);
 
-
     displayResultList(results.join(''));
+    if ($.mobile.loaderWidget !== undefined) {
+      $.mobile.loading('hide');
+    }
   });
 }
 
@@ -151,6 +161,6 @@ function fixLinks() {
   });
 }
 
-$('#one').live('pageinit', function(event) {
+$('div[data-role=page]').live('pageinit', function(event) {
   fixLinks();
 });
