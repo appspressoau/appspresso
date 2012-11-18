@@ -61,8 +61,11 @@ function performSearch(filter) {
     var results = [];
     results.push('<ul class="nav nav-tabs nav-stacked activity-list">');
 
-    $.each(data, function(idx, obj) {
+    var mapPoints = [];
+
+    $.each(data.locations, function(idx, obj) {
       console.log(obj);
+      mapPoints.push([obj.name, obj.lat, obj.lng, idx+1]);
       result = '\
                                 <li><a href="#shop-alturacoffee">\
                                     <i class="icon-chevron-right"></i>\
@@ -89,6 +92,9 @@ function performSearch(filter) {
     });
     results.push('</ul>');
 
+    updateMap(data.center.lat, data.center.lng, mapPoints);
+
+
     displayResultList(results.join(''));
   });
 }
@@ -99,6 +105,32 @@ function displayResultList(elems) {
     'class': 'my-new-list',
     html: elems
   }).appendTo('#nearby');
+}
+
+function updateMap (centerLat, centerLng, locations) {
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: new google.maps.LatLng(centerLat, centerLng),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
 }
 
 function fixLinks() {

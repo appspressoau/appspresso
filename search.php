@@ -19,19 +19,21 @@ $location = isset($_GET['query']) && strlen($_GET['query']) ? $_GET['query'] : '
 list($lat,$lng) = $foursquare->GeoLocate($location);
 
 // Prepare parameters
-$params = array("ll"=>"$lat,$lng","categoryId"=>"4bf58dd8d48988d1e0931735");
+$params = array("ll"=>"$lat,$lng","categoryId"=>"4bf58dd8d48988d1e0931735", 'radius' => 1000);
 
 // Perform a request to a public resource
 $response = $foursquare->GetPublic("venues/search",$params);
 $venues = json_decode($response);
-$results = array();
+$results = array('center' => array('lat' => $lat, 'lng' => $lng), 'locations' => array());
 foreach($venues->response->venues as $venue) {
   $result = array('name' => $venue->name,
-                  'distance' => metersToDistance($venue->location->distance));
+                  'distance' => metersToDistance($venue->location->distance),
+                  'lat' => $venue->location->lat,
+                  'lng' => $venue->location->lng);
   if (isset($venue->location->address)) {
     $result['address'] = $venue->location->address;
   }
-  $results[] = $result;
+  $results['locations'][] = $result;
 }
 print json_encode($results);
 ?>

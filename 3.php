@@ -62,6 +62,7 @@ $footer = '<div data-role="footer" data-theme="d">
     <script type="text/javascript" src="scripts/js/jquery-1.8.2.min.js"></script>
     <script type="text/javascript" src="scripts/js/jquery.mobile-1.2.0.js"></script>
     <script type="text/javascript" src="appacino.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
 </head>
 
 <body>
@@ -89,7 +90,7 @@ $footer = '<div data-role="footer" data-theme="d">
                             </form>
 
                             <!-- map -->
-                            <div class="map-static"></div>
+                            <div id="map" style="width: 300px; height: 300px;"></div>
 
                             <!-- list -->
                             <div id="nearby">
