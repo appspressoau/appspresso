@@ -22,10 +22,9 @@ $footer = '<div data-role="footer" data-theme="d">
     <meta charset="utf-8">
 
     <title>Appuccino</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content=""><!-- App splash screen -->
-    <link rel="apple-touch-startup-image" href="img/splash.png"><!-- Fullscreen app -->
     <meta name="apple-mobile-web-app-capable" content="yes"><!-- Alter the staus bar (default|black|black-translucent) -->
     <meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- Le styles -->
 
@@ -46,7 +45,6 @@ $footer = '<div data-role="footer" data-theme="d">
       }
 
     </style>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./styles/css/responsive.css" rel="stylesheet" type="text/css">
 <!--     <link href="./styles/css/jquery.mobile-1.2.0.css" rel="stylesheet" type="text/css"> -->
     <link href="./styles/css/jquery.mobile-1.2.0.css" rel="stylesheet" type="text/css">
@@ -79,7 +77,7 @@ $footer = '<div data-role="footer" data-theme="d">
                         <h1>Appuccino</h1>
                     </div><!-- /header -->
                     <div class="submenu"><h2>Discover</h2></div>
-                    <div data-role="content" data-theme="d">
+                    <div data-role="content" class="content" data-theme="d">
 
 
                             <form class="form-search">

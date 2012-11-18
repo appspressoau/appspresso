@@ -21,7 +21,7 @@
     <meta charset="utf-8">
 
     <title>Appuccino</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content=""><!-- App splash screen -->
     <link rel="apple-touch-startup-image" href="img/splash.png"><!-- Fullscreen app -->
