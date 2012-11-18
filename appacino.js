@@ -94,7 +94,7 @@ function performSearch(filter) {
       if (obj.hasOwnProperty('address')) {
         result += '                         <div class="media"><span>'+obj.address+'</span>';
       }
-      result += '                           <span>'+obj.distance+'</span></div>\
+      result += '                           <span class="time">'+obj.distance+'</span></div>\
                                         </div>\
                                     </div>\
                                 </a></li>';
