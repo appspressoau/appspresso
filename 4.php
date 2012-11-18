@@ -150,6 +150,24 @@
                                 <a class="btn active" data-role="none">Fiends</a>
                             </div>
 
+                            <h3 class="sub">Your rank</h3>
+                            <ul class="nav nav-tabs nav-stacked activity-list">
+
+                            <li><a href="#">
+                                    <i class="icon-chevron-right"></i>
+                                        <div class="media">
+                                            <img class="media-object pull-left" src="content/users/3.png" alt="" width="48" height="48">
+                                            <div class="media-body">
+                                            <h4 class="media-heading"><i class="icon-trophy"></i>Ashley Holman</h4>
+                                            <div class="media">
+
+                                            <span class="label label-success">1,337 sips</span>
+                                            </div>
+                                            </div>
+                                            </div>
+                                </a></li>
+                            </ul>
+
                             <h3 class="sub">Leaderboard</h3>
 
                             <ul class="nav nav-tabs nav-stacked activity-list">

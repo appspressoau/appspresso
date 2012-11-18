@@ -934,7 +934,7 @@ form .ui-input-text{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;b
 #global-nav li{display:inline-block;font-weight:normal;width:32.6%;padding:3px 0;margin:0;text-align:center;}#global-nav li a{text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);}
 #global-nav li *{float:none;}
 #global-nav li:active{background:#303030;}
-#global-nav li.active{background:#468847;}
+#global-nav li.active{background:#468847;-webkit-box-shadow:inset 0px 2px 5px 0px;-moz-box-shadow:inset 0px 2px 5px 0px;box-shadow:inset 0px 2px 5px 0px;}
 html,body{height:100%;}
 #wrap{min-height:100%;height:auto !important;height:100%;margin:0 auto -60px;}
 #push,#footer{height:60px;}

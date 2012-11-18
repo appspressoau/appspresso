@@ -79,7 +79,7 @@
                     <div class="submenu"><h2>Blend</h2></div>
 
                     <div data-role="content" data-theme="d">
-
+<h3 class="sub">Friend Activity</h3>
 
 
 
@@ -94,6 +94,7 @@
                                             <h4 class="media-heading">Zoe Bogner</h4>
                                             <div class="media">
                                             "You must try the ciboccino!"
+                                            <span class="time">22mins ago</span>
                                             </div>
                                             </div>
                                             </div>
@@ -107,6 +108,7 @@
                                             <h4 class="media-heading">Name Name</h4>
                                             <div class="media">
                                             unlocked the <strong>Caffeine Fiend</strong> badge!
+                                            <span class="time">1hr ago</span>
                                             </div>
                                             </div>
                                             </div>
