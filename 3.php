@@ -84,13 +84,13 @@ $footer = '<div data-role="footer" data-theme="d">
 
                             <form class="form-search">
                                 <div class="input-append">
-                                <input type="text" class="input-medium search-query search-query span6" id="searchbox">
+                                <input type="text" class="input-medium search-query search-query span6" id="searchbox" placeholder="e.g. North Tce, Adelaide">
                                 <button type="submit" class="btn" data-role="none" id="discoverSearch">Search</button>
                                 </div>
                             </form>
 
                             <!-- map -->
-                            <div id="map" style="width: 300px; height: 300px;"></div>
+                            <div id="map"></div>
 
                             <!-- list -->
                             <div id="nearby">
@@ -145,14 +145,15 @@ $footer = '<div data-role="footer" data-theme="d">
                                             <h4 class="media-heading">Zoe Bogner</h4>
                                             <div class="media">
                                             "Mmmmm, hazelnuts!"<br />
-                                            Rating: <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star-empty"></i>
+                                            Rating:
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star-empty"></i>
                                             </div>
-                                            </div>
-                                            </div>
+                                        </div>
+                                    </div>
                                 </a></li>
 
                                 <li><a href="#">
