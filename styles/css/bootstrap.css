@@ -913,7 +913,7 @@ h3.sub{font-size:1.3em;margin:0 auto;}
 .activity-list .media{margin-top:0;}.activity-list .media .media-heading{display:inline-block;}
 .activity-list .icon-star,.activity-list .icon-star-empty{width:9px;}
 #nearby i.icon-map-marker,.activity-list i.icon-map-marker{font-size:30px;margin-right:0;margin-left:-10px;}
-.map-static{background:url('../../img/map.png') no-repeat center center;height:200px;width:100%;margin-bottom:5px;}
+#map{height:140px;width:100% -2px;margin-bottom:5px;border:1px solid #ddd;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
 .shop-tags,.shop-actions{margin-bottom:10px;}
 .shop-actions{text-align:center;width:100%;}.shop-actions a{width:90%;}
 .shop-rating{float:right;font-size:20px;margin-top:25px;}.shop-rating.make{font-size:30px;margin-top:15px;}
@@ -921,16 +921,16 @@ h3.sub{font-size:1.3em;margin:0 auto;}
 span.ui-btn-text{}
 .ui-btn{display:inline !important;}
 .ui-btn.ui-shadow,.ui-btn-hover-d{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;background:none;border:0 none;}
-.form-search{text-align:center;}.form-search input.ui-input-text{width:100%;display:inline !important;margin:0;}
+.form-search{text-align:center;margin-bottom:14px;}.form-search input.ui-input-text{width:100%;display:inline !important;margin:0;}
 .form-search .btn{display:inline !important;}
 form .ui-input-text{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}
 .ui-dialog-contain{border:1px solid #333;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:10px;}
-#footer{background:#000000 !important;position:fixed;bottom:0;width:100%;margin:0;padding:0;}#footer *{border:0 none;}
+#footer{background:#000000 !important;position:fixed;bottom:0;width:100%;margin:0;padding:0;height:45px;}#footer *{border:0 none;}
 #global-nav{text-align:center;width:100%;margin:0;padding:0;}#global-nav .ui-controlgroup-controls{width:100%;}
 #global-nav a{color:#ffffff !important;}#global-nav a:hover{background:none;}
 #global-nav a:active{background:0 none;}
-#global-nav i{margin:0 5px;padding:10px;font-size:35px;}
-#global-nav ul{margin:0;text-align:center;height:100%;overflow:hidden;}
+#global-nav i{margin:0 5px;padding:10px 8px 6px 8px;font-size:35px;}
+#global-nav ul{margin:0;padding:0;text-align:center;height:100%;overflow:hidden;}
 #global-nav li{display:inline-block;font-weight:normal;width:32.6%;padding:3px 0;margin:0;text-align:center;}#global-nav li a{text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);}
 #global-nav li *{float:none;}
 #global-nav li:active{background:#303030;}

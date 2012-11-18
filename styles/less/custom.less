@@ -69,11 +69,12 @@ h3.sub {
     }
 }
 
-.map-static {
-    background: url('../../img/map.png') no-repeat center center;
-    height: 200px;
-    width:100%;
+#map {
+    height: 140px;
+    width:100% -2px;
     margin-bottom: 5px;
+    border: 1px solid #ddd;
+    .border-radius(3px);
 }
 
 .shop-tags, .shop-actions {
@@ -119,6 +120,7 @@ span.ui-btn-text {
 
 .form-search {
     text-align: center;
+    margin-bottom: 14px;
     input.ui-input-text {
         width: 100%;
         display:inline !important;
@@ -157,6 +159,7 @@ form {
           width: 100%;
           margin: 0;
           padding: 0;
+          height: 45px;
           * {
               border: 0 none; // kills that pesky line of unknown origin!!
           }
@@ -167,6 +170,7 @@ form {
         width: 100%;
         margin: 0;
         padding: 0;
+
 
 
         .ui-controlgroup-controls {
@@ -184,13 +188,14 @@ form {
 
         i {
              margin: 0 5px;
-             padding: 10px;
+             padding: 10px 8px 6px 8px;
              font-size:35px;
 
         }
 
         ul {
             margin: 0;
+            padding:0;
             text-align: center;
             height: 100%;
             overflow: hidden;
@@ -202,6 +207,7 @@ form {
             padding: 3px 0;
             margin: 0;
             text-align: center;
+
 
             a {
                 text-shadow: 0 -1px 0 rgba(0,0,0,.25); //makes the text crispy :D
